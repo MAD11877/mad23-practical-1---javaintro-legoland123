@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Question5
 {
@@ -27,6 +28,27 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
+    ArrayList<Integer> data = new ArrayList<>();
+    System.out.print("Enter a number: ");
+    var input = in.nextInt();
+    for(var i = 1; i <= input; i++){
+      System.out.print(": ");
+      var number = in.nextInt();
+      data.add(number);
+    }
     
+    var highest_num = 0;
+    var mode = -1; 
+    for(int i : data){
+      var times = 0;
+      for(int x : data){
+        if(i == x) { times++; }
+      }
+      if(times > mode) {
+        highest_num = i;
+        mode = times;
+      }
+    }
+    System.out.println("The interger " + highest_num + " appeared " + mode + " times");
   }
 }
