@@ -12,9 +12,9 @@ public class Question2
      
     Scanner in = new Scanner(System.in);
     System.out.print("Enter height (m): ");
-    // var height = in.nextDouble();
+    double height = 0;
     System.out.print("Enter weight (kg): ");
-    // var weight = in.nextDouble();
+    double weight = 0;
     var bmi = weight / ( height * height );
     System.out.println("Bmi of user is " + bmi);
   }
