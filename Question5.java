@@ -32,7 +32,7 @@ public class Question5
     // System.out.print("Enter a number: ");
     var input = in.nextInt();
     for(var i = 1; i <= input; i++){
-      System.out.print(": ");
+      //System.out.print(": ");
       var number = in.nextInt();
       data.add(number);
     }
