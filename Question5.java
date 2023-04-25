@@ -29,7 +29,7 @@ public class Question5
      
     Scanner in = new Scanner(System.in);
     ArrayList<Integer> data = new ArrayList<>();
-    System.out.print("Enter a number: ");
+    // System.out.print("Enter a number: ");
     var input = in.nextInt();
     for(var i = 1; i <= input; i++){
       System.out.print(": ");
