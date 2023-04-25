@@ -30,10 +30,10 @@ public class Question5
     Scanner in = new Scanner(System.in);
     ArrayList<Integer> data = new ArrayList<>();
     System.out.print("Enter a number: ");
-    int input = 0;
+    var input = in.nextInt();
     for(var i = 1; i <= input; i++){
       System.out.print(": ");
-      int number = 0;
+      var number = in.nextInt();
       data.add(number);
     }
     
@@ -50,5 +50,6 @@ public class Question5
       }
     }
     System.out.println("The interger " + highest_num + " appeared " + mode + " times");
+    in.close();
   }
 }
