@@ -49,7 +49,7 @@ public class Question5
         mode = times;
       }
     }
-    System.out.println("The interger " + highest_num + " appeared " + mode + " times");
+    System.out.println(highest_num);
     in.close();
   }
 }
